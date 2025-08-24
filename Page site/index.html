@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Loralai Stones — White Travertine Marble</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Loralai Stones — premium white travertine marble from Balochistan, Pakistan. Extraction, cutting & shaping, customization, global logistics and export." />
+
+  <!-- ====== Design System (adjust these to match the second site's vibe) ====== -->
+  <style>
+    :root{
+      /* Typography */
+      --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      --text: #0a0a0a;
+      --muted: #5c5c5c;
+
+      /* Colour system (neutral, premium, marble-forward) */
+      --bg: #f7f7f5;
+      --surface: #ffffff;
+      --ink: #0b0b0b;
+      --line: rgba(10,10,10,0.08);
+
+      /* Subtle light gradient reminiscent of high-end architecture sites */
+      --grad-a: #ffffff;
+      --grad-b: #f1f1ed;
+
+      /* Accents kept understated (no brochure gradient) */
+      --accent: #1f1f1f;
+      --accent-2: #a6a6a0;
+
+      /* Radii & shadows */
+      --radius-xl: 24px;
+      --shadow-soft: 0 10px 30px rgba(0,0,0,0.08);
+      --shadow-card: 0 6px 18px rgba(0,0,0,0.06);
+
+      /* Sizing */
+      --maxw: 1200px;
+      --pad: 20px;
+    }
+
+    /* Reset & base */
+    *{box-sizing:border-box}
+    html,body{padding:0;margin:0;background:linear-gradient(120deg,var(--grad-a),var(--grad-b)) fixed;color:var(--text);font-family:var(--font-sans);-webkit-font-smoothing:antialiased}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--maxw);margin:auto;padding:0 var(--pad)}
+    .grid{display:grid;gap:28px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-xl);box-shadow:var(--shadow-card)}
+
+    /* Nav */
+    .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.72);backdrop-filter:saturate(130%) blur(8px);border-bottom:1px solid var(--line)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+    .brand{font-weight:700;letter-spacing:.06em}
+    .nav a{opacity:.85;margin-left:20px}
+    .nav a:hover{opacity:1}
+
+    /* Hero */
+    .hero{padding:90px 0 70px}
+    .hero-inner{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end}
+    .eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;opacity:.7}
+    h1{font-size:clamp(32px,4vw,54px);line-height:1.05;margin:10px 0 16px}
+    .lede{font-size:clamp(16px,2vw,20px);color:var(--muted);max-width:58ch}
+    .hero-media{border-radius:var(--radius-xl);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-soft)}
+
+    /* Sections */
+    section{padding:70px 0}
+    .section-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:28px}
+    .section-title{font-size:28px;letter-spacing:.02em}
+    .section-sub{color:var(--muted)}
+
+    /* Lists */
+    .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:8px 14px;background:#fff}
+    .kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+
+    /* Footer */
+    footer{padding:60px 0;border-top:1px solid var(--line);background:rgba(255,255,255,0.7);backdrop-filter:blur(6px)}
+    .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}
+    .copy{color:var(--muted);font-size:14px}
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero-inner{grid-template-columns:1fr}
+      .foot-grid{grid-template-columns:1fr}
+    }
+
+    /* Simple reveal animation */
+    .reveal{opacity:0;transform:translateY(12px);animation:reveal .7s ease forwards}
+    .reveal:nth-child(2){animation-delay:.08s}
+    .reveal:nth-child(3){animation-delay:.16s}
+    @keyframes reveal{to{opacity:1;transform:none}}
+  </style>
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+  <!-- ====== NAV ====== -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">LORALAI STONES</div>
+      <div class="nav-links">
+        <a href="#ai-assistant">AI Assistant</a>
+        <a href="#about">About</a>
+        <a href="#services">Capabilities</a>
+        <a href="#applications">Applications</a>
+        <a href="#raw-mining">Raw Mining</a>
+        <a href="#projects">Projects</a>
+        <a href="#logistics">Logistics</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="reveal">
+        <div class="eyebrow">White Travertine Marble</div>
+        <h1>Natural elegance, crafted in stone.</h1>
+        <p class="lede">
+          Loralai Stones is a leading mining business based in Balochistan, Pakistan,
+          specializing in the extraction and processing of premium travertine stone.
+          With a commitment to excellence and sustainability, we deliver high-quality materials
+          for international markets. Our focus on innovation, craftsmanship, and customer
+          satisfaction sets us apart in the natural stone industry.
+        </p>
+        <div style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap">
+          <span class="pill">Raw Extraction</span>
+          <span class="pill">Cutting &amp; Shaping</span>
+          <span class="pill">Customization</span>
+          <span class="pill">Global Exports</span>
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <!-- Replaced with extracted brochure image -->
+        <img src="assets/extracted/loralai-stones-brochure24-p1-1.jpeg" alt="Premium white travertine slabs by Loralai Stones">
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== AI ASSISTANT ====== -->
+  <section id="ai-assistant">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">AI-Powered Marble Expert</h2>
+        <div class="section-sub kicker">24/7 Intelligent Support</div>
+      </div>
+      
+      <div class="grid" style="grid-template-columns:1fr 1fr">
+        <div class="card" style="padding:28px">
+          <h3 style="margin-top:0">Your Personal Marble Consultant</h3>
+          <p style="color:var(--muted);max-width:65ch">
+            Get instant answers to all your travertine marble questions with our AI-powered assistant. 
+            Whether you're curious about properties, applications, or our processes, our expert system 
+            provides detailed, accurate information 24/7.
+          </p>
+          <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
+            <span class="pill">Instant Answers</span>
+            <span class="pill">Expert Knowledge</span>
+            <span class="pill">Always Available</span>
+            <span class="pill">Text to Speech</span>
+          </div>
+        </div>
+        
+        <div class="card" style="padding:28px;display:flex;flex-direction:column;justify-content:center">
+          <div style="text-align:center;margin-bottom:20px">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color:var(--accent)">
+              <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 style="text-align:center;margin:0 0 16px">Try It Now!</h3>
+          <p style="color:var(--muted);text-align:center;margin:0">
+            Look for the chat button in the bottom-right corner of this page. 
+            Ask anything about travertine marble, our mining processes, or applications!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Who We Are</h2>
+        <div class="section-sub kicker">Company Overview</div>
+      </div>
+
+      <div class="grid" style="grid-template-columns:1.2fr 1fr">
+        <div class="card" style="padding:28px">
+          <h3 style="margin-top:0">Best in Industry Quality</h3>
+          <p style="color:var(--muted);max-width:65ch">
+            We take pride in offering the purest travertine stone, unmatched in brightness and elegance.
+            Meticulous extraction and processing ensure exceptional quality—a preferred choice for a premium,
+            distinctive look that stands out from the rest.
+          </p>
+          <hr style="border:none;border-top:1px solid var(--line);margin:18px 0" />
+          <h3>About Travertine Marble</h3>
+          <p style="color:var(--muted);max-width:65ch">
+            Travertine is a timeless natural stone formed by mineral deposits in geothermal springs and
+            limestone caves. Renowned for unique patterns and earthy elegance, it’s ideal for interior and
+            exterior applications—flooring, wall cladding, countertops, and decorative accents—thanks to its
+            durability and slip resistance.
+          </p>
+        </div>
+
+        <div class="grid">
+          <div class="card" style="padding:22px">
+            <div class="kicker">USPs</div>
+            <ul style="margin:10px 0 0 16px;color:var(--muted)">
+              <li>Exceptional quality and finish of travertine marble.</li>
+              <li>Tailored solutions for diverse architectural needs.</li>
+              <li>Sustainable, eco-friendly mining practices.</li>
+              <li>Comprehensive logistics and export services.</li>
+            </ul>
+          </div>
+          <div class="card" style="overflow:hidden">
+            <img src="assets/extracted/loralai-stones-brochure24-p4-1.jpeg" alt="Travertine quarry and processing">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CAPABILITIES ====== -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Capabilities</h2>
+        <div class="section-sub kicker">From Quarry to Custom Finish</div>
+      </div>
+
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="card">
+          <img src="assets/raw-extraction/whatsapp-image-2025-08-24-at-10.30.38_e8d0de0e.jpg" alt="Raw travertine extraction from quarries">
+          <div style="padding:18px">
+            <h3>Raw Extraction</h3>
+            <p style="color:var(--muted)">
+              Sustainable, precise extraction from the rich quarries of Baluchistan using advanced techniques
+              to preserve natural beauty and structural integrity.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cutting-and-shaping/whatsapp-image-2025-08-24-at-10.30.49_38e3df5e.jpg" alt="Professional cutting and shaping of travertine">
+          <div style="padding:18px">
+            <h3>Cutting &amp; Shaping</h3>
+            <p style="color:var(--muted)">
+              State-of-the-art facilities transform raw stone into custom-cut slabs and tiles—intricate designs
+              or precise dimensions for architects, builders, and designers worldwide.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="padding:24px">
+          <h3>Customization</h3>
+          <p style="color:var(--muted)">
+            Options tailored to project requirements—from finish and size to bespoke forms—delivering
+            perfection in every piece.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== APPLICATIONS ====== -->
+  <section id="applications">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Applications</h2>
+        <div class="section-sub kicker">Interior • Exterior • Artistic</div>
+      </div>
+
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="card">
+          <img src="assets/extracted/loralai-stones-brochure24-p2-1.jpeg" alt="Luxury interiors with travertine flooring and wall cladding">
+          <div style="padding:18px">
+            <h3>Luxury Interiors</h3>
+            <p style="color:var(--muted)">
+              Flooring, countertops, wall cladding—timeless elegance and a touch of exclusivity.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/extracted/loralai-stones-brochure24-p2-2.jpeg" alt="Exterior architectural travertine facade">
+          <div style="padding:18px">
+            <h3>Exterior Architecture</h3>
+            <p style="color:var(--muted)">
+              Facades, cladding, and outdoor features—durable, weather-resistant, naturally beautiful.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/artistic-installations/whatsapp-image-2025-08-24-at-10.16.37_873310fe.jpg" alt="Artistic travertine installations">
+          <div style="padding:18px">
+            <h3>Artistic Installations</h3>
+            <p style="color:var(--muted)">
+              Elegant tables, lamps, and statement pieces that add sophistication to any space.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== RAW MINING ====== -->
+  <section id="raw-mining">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Raw Mining</h2>
+        <div class="section-sub kicker">From the Heart of Balochistan</div>
+      </div>
+
+      <div class="grid" style="grid-template-columns:repeat(3,1fr);margin-bottom:28px">
+        <div class="card">
+          <img src="assets/mine-pics/mine-1.jpg" alt="Travertine mining operations in Balochistan">
+          <div style="padding:18px">
+            <h3>Mining Operations</h3>
+            <p style="color:var(--muted)">
+              Our state-of-the-art mining operations in the rich quarries of Balochistan, extracting premium white travertine with precision and care.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/mine-pics/min-2.jpg" alt="Quarry site showing travertine deposits">
+          <div style="padding:18px">
+            <h3>Natural Deposits</h3>
+            <p style="color:var(--muted)">
+              Vast natural travertine deposits formed over millennia, showcasing the geological richness of our mining sites.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/mine-pics/mine-3.jpg" alt="Mining equipment and extraction process">
+          <div style="padding:18px">
+            <h3>Extraction Process</h3>
+            <p style="color:var(--muted)">
+              Advanced extraction techniques ensuring minimal environmental impact while maintaining the natural integrity of the stone.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="card">
+          <img src="assets/mine-pics/mine-4.jpg" alt="Raw travertine blocks at mining site">
+          <div style="padding:18px">
+            <h3>Raw Material</h3>
+            <p style="color:var(--muted)">
+              Freshly extracted travertine blocks showcasing the natural beauty and quality that makes our stone exceptional.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/mine-pics/mine-5.jpg" alt="Mining site landscape and operations">
+          <div style="padding:18px">
+            <h3>Site Operations</h3>
+            <p style="color:var(--muted)">
+              Comprehensive mining operations managed with sustainable practices and respect for the natural environment.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/mine-pics/mine-6.jpg" alt="Quality travertine stone preparation">
+          <div style="padding:18px">
+            <h3>Quality Preparation</h3>
+            <p style="color:var(--muted)">
+              Careful preparation and initial processing of extracted stone, ensuring only the finest quality reaches our clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS ====== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Projects</h2>
+        <div class="section-sub kicker">Our Work</div>
+      </div>
+
+      <div class="grid" style="grid-template-columns:1fr 1fr;gap:28px">
+        <div class="card project-card" data-project-id="proj1">
+          <a href="assets/proj-1/whatsapp-image-2025-08-19-at-12.04.58_b3ce2b0e.jpg" target="_blank" rel="noopener">
+            <img src="assets/proj-1/whatsapp-image-2025-08-19-at-12.04.58_b3ce2b0e.jpg" alt="Premium Travertine Installation">
+          </a>
+          <div style="padding:18px">
+            <h3>Premium Travertine Installation</h3>
+            <p style="color:var(--muted)">Sophisticated office space featuring premium travertine wall panels with integrated LED lighting and modern pendant fixtures. This project showcases our expertise in creating luxurious, professional environments.</p>
+            <div style="margin-top:12px">
+              <span style="font-size:13px;font-weight:bold;color:var(--text);background:rgba(0,0,0,0.08);padding:6px 12px;border-radius:16px;border:1px solid var(--line)">📸 Click to view all images in new tab</span>
+            </div>
+          </div>
+        </div>
+        <div class="card project-card" data-project-id="proj2">
+          <a href="assets/proj-2/main-proj.jpg" target="_blank" rel="noopener">
+            <img src="assets/proj-2/main-proj.jpg" alt="Modern Marble Application">
+          </a>
+          <div style="padding:18px">
+            <h3>Modern Marble Application</h3>
+            <p style="color:var(--muted)">Contemporary design featuring travertine marble walls with dramatic lighting and sleek modern aesthetics. Demonstrates the versatility and beauty of our natural stone in high-end interior applications.</p>
+            <div style="margin-top:12px">
+              <span style="font-size:13px;font-weight:bold;color:var(--text);background:rgba(0,0,0,0.08);padding:6px 12px;border-radius:16px;border:1px solid var(--line)">📸 Click to view all images in new tab</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== GLOBAL & LOGISTICS ====== -->
+  <section id="logistics">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Global Appeal &amp; Logistics</h2>
+        <div class="section-sub kicker">International Standards</div>
+      </div>
+
+      <div class="grid" style="grid-template-columns:1fr 1fr">
+        <div class="card" style="padding:24px">
+          <h3>Global Appeal</h3>
+          <p style="color:var(--muted)">
+            Proudly serving clients in the US, Europe, and beyond. Our white travertine features in
+            prestigious projects worldwide, earning acclaim for unmatched quality and timeless beauty.
+          </p>
+        </div>
+        <div class="card" style="padding:24px">
+          <h3>Logistics &amp; Export Capabilities</h3>
+          <p style="color:var(--muted)">
+            Smooth, efficient global delivery with robust export expertise—packaging, documentation,
+            and customs clearance handled end-to-end so your orders arrive safely and on time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Contact</h2>
+        <div class="section-sub kicker">Let’s Build Something Timeless</div>
+      </div>
+
+      <div class="grid" style="grid-template-columns:1fr 1fr">
+        <div class="card" style="padding:24px">
+          <p style="margin:0 0 8px"><strong>Email</strong><br>
+            <a href="mailto:loralaistones@gmail.com">loralaistones@gmail.com</a></p>
+
+          <p style="margin:16px 0 8px"><strong>Phone / WhatsApp</strong><br>
+            +92 300-4349999<br>
+            +92 300-1818499<br>
+            +92 300-4296699
+          </p>
+
+          <p style="margin:16px 0 0"><strong>Instagram</strong><br>
+            <a href="https://instagram.com/loralaistones" target="_blank" rel="noopener">@loralaistones</a>
+          </p>
+        </div>
+
+        <div class="card" style="padding:24px">
+          <form action="https://formspree.io/f/your-form-id" method="POST" target="_blank">
+            <label>Name<br><input name="name" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;margin-top:6px"></label>
+            <label style="display:block;margin-top:14px">Email<br><input type="email" name="email" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;margin-top:6px"></label>
+            <label style="display:block;margin-top:14px">Message<br><textarea name="message" rows="4" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;margin-top:6px"></textarea></label>
+            <button type="submit" style="margin-top:16px;padding:12px 18px;border-radius:999px;border:1px solid var(--line);background:#fff">Send</button>
+          </form>
+          <p class="copy" style="margin-top:8px">Replace the form action with your provider or backend.</p>
+          <hr style="border:none;border-top:1px solid var(--line);margin:18px 0" />
+          <p class="copy" style="margin:0;font-size:12px;color:var(--muted)">
+            💬 <strong>Need quick answers?</strong> Use our AI chatbot in the bottom-right corner for instant help with marble-related questions!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOLLOW US ON INSTAGRAM ====== -->
+  <section style="padding:40px 0;background:linear-gradient(135deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);color:white">
+    <div class="container">
+      <div style="text-align:center">
+        <h2 style="margin:0 0 12px;font-size:24px;font-weight:700">Follow Us on Instagram</h2>
+        <p style="margin:0 0 20px;opacity:0.9;font-size:16px">Stay updated with our latest projects and behind-the-scenes content</p>
+        <a href="https://instagram.com/loralaistones" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.2);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.3);padding:12px 24px;border-radius:50px;color:white;text-decoration:none;font-weight:600;transition:all 0.3s ease;font-size:16px" onmouseover="this.style.background='rgba(255,255,255,0.3)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(255,255,255,0.2)';this.style.transform='translateY(0)'">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          @loralaistones
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <div class="container foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:8px">LORALAI STONES</div>
+        <p class="copy">Premium white travertine marble • Balochistan, Pakistan</p>
+      </div>
+      <div>
+        <div class="kicker">Inquiries</div>
+        <p class="copy" style="margin-top:10px">
+          <a href="mailto:loralaistones@gmail.com">loralaistones@gmail.com</a><br>
+          +92 300-4349999
+        </p>
+      </div>
+      <div>
+        <div class="kicker">Social</div>
+        <p class="copy" style="margin-top:10px">
+          <a href="https://instagram.com/loralaistones" target="_blank" rel="noopener">@loralaistones</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot Scripts -->
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+  <script src="project-gallery.js"></script>
+</body>
+</html>
+
+
